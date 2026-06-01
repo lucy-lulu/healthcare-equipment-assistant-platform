@@ -1,55 +1,221 @@
-# NOV-healthcare-equipment-assistant 
+# Healthcare Equipment Assistant Platform
 
-## Project Background
-Clients of the NDIS (and perhaps the NDIA) can have trouble choosing the equipment they need, which best matches their particular disability and which the service is willing to pay for or sufficiently subsidise.
-NOVIS manage these complications with a manual process which works well but is time-consuming for all concerned, and can occasionally misfire. So NOVIS are commissioning a software solution that involves multiple creative interfaces, tuned for accessibility, joined with a smart backend that integrates with multiple sources of relevant information. 
-The project will have a focus on the technologies required to integrate with SAP. 
+A full-stack healthcare equipment assistant designed for [Novis Healthcare](https://novis.com.au/), an Australian assistive technology and healthcare equipment provider. The platform helps NDIS participants, carers, and business partners search for suitable assistive products and manage quote requests more efficiently.
 
-## Project Board
-The project board in NOV team serves as a dynamic tool for managing and tracking the progress of tasks, recording sprint backlogs for each sprint(planned backlogs as well), and also ensuring the project remains on schedule and that all team members are aligned with the project's goals. By visualizing the workflow, from task assignment to completion, it allows the team to identify bottlenecks, prioritize tasks, and allocate resources effectively. It acts as a real-time dashboard that provides a clear overview of what tasks are in progress, which ones are pending, and what has been completed, fostering accountability and transparency within the team. By providing a centralized platform for project management, the project board not only streamlines the execution process but also ensures that the project stays on track towards its objectives.
+The platform was developed for a real client context involving NOVIS Healthcare, where equipment selection is often handled through a manual process. The goal of this project is to make product discovery, accessibility-aware browsing, and quote-request workflows easier to use, easier to maintain, and more scalable.
 
-Visit our project board here: [NOV Project Board](https://github.com/orgs/SWEN90017-2025-SM1/projects/12)
+---
 
-## Prototype
-Low-fi: https://www.figma.com/proto/rG02DzTzSoGmnUWFHcz2WL/Novis-Frontend?node-id=149-3703&p=f&t=ibopKxSO0lndZZIy-0&scaling=min-zoom&content-scaling=fixed&page-id=148%3A3699&starting-point-node-id=149%3A3700
+## Demo & Prototype
 
-## Wiki Page
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Live Demo</h3>
+      <p>
+        <a href="http://13.211.212.24/login">Open Live Demo</a>
+      </p>
+      <p><strong>Demo Accounts</strong></p>
+      <p>
+        <strong>Business Partner</strong><br/>
+        Username: <code>partner_jane</code><br/>
+        Password: <code>password</code>
+      </p>
+      <p>
+        <strong>Admin</strong><br/>
+        Username: <code>admin_jane</code><br/>
+        Password: <code>password</code>
+      </p>
+      <p><em>These are demo accounts for portfolio review only.</em></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>Figma Prototype</h3>
+      <p>
+        <a href="https://www.figma.com/proto/rG02DzTzSoGmnUWFHcz2WL/Novis-Frontend?node-id=149-3703&p=f&t=ibopKxSO0lndZZIy-0&scaling=min-zoom&content-scaling=fixed&page-id=148%3A3699&starting-point-node-id=149%3A3700">Open Figma Prototype</a>
+      </p>
+      <p>
+        The prototype explores the product discovery flow, role-based user experience,
+        and accessibility-oriented interface design.
+      </p>
+    </td>
+  </tr>
+</table>
 
-The wiki page for the this project is a critical resource that consolidates all project documentation, facilitating seamless collaboration, knowledge sharing, and process alignment among team members. By serving as a central hub for information, it ensures that everyone involved in the project has access to the latest details, decisions, and technical guidelines. This helps to maintain consistency across the project's development stages and supports effective onboarding for new team members. Our team tend to use "10-seconds test" to verify the use and comprehensive of our wiki page design.
+---
 
-Visit our wiki page here: [NOV Wiki Page](https://github.com/SWEN90017-2025-SM1/NOV-healthcare-equipment-assistant/wiki)
+## Why This Project
 
-## Roadmap
+Choosing assistive healthcare equipment can be difficult because users often need to consider disability needs, product suitability, funding constraints, supplier workflows, and professional recommendations.
 
-- ✅ **Sprint 1: Research & Requirements**
-  - Conduct domain research (NDIS, NDIA, NOVIS, SAP)
-  - Identify user personas and roles
-  - Draft user stories and acceptance criteria
-  - Develop initial product backlog and project plan
+In the original client context, parts of this process were handled manually. This project explores how a web platform can make the workflow more scalable by supporting:
 
-- ✅ **Sprint 2: Design & Planning**
-  - Refine and confirm user stories, personas, and backlog
-  - Create low- to mid-fidelity UI prototypes
-  - Draft system architecture and database design diagrams
-  - Gather client feedback and adjust project scope
+- structured product search and filtering
+- product detail review
+- enquiry submission and reply workflows
+- order and quote-related workflows
+- role-based access for different user types
+- future integration with enterprise systems such as SAP or HubSpot
 
-- 🔄 **Sprint 3: Development Phase 1**
-  - Finalise UI prototype and confirm with client
-  - Design and build MySQL database using exported product data
-  - Implement core product features:
-    - Product search, filter, and details view
-    - Business partner quote request workflow
-    - Basic role-based access control middleware
-  - Begin unit testing and feedback-driven iteration
+---
 
-- ⏳ **Sprint 4: Development Phase 2**
-  - Extend features: quote tracking, order history, notifications
-  - Improve frontend/backend integration
-  - Conduct system testing and refinement
-  - Prepare for sprint reviews and client demos
+## Key Features
 
-- 📅 **Semester 2: To be continued**
-  - Expand system features (based on backlog and client feedback)
-  - Explore optional integrations (e.g., Hubspot, SAP)
-  - Conduct user acceptance testing (UAT)
-  - Prepare final documentation and handover package
+### Product Discovery
+
+- Browse healthcare equipment products
+- Search products by keyword
+- View detailed product information
+- Support product categories and structured product attributes
+
+### Enquiry Workflow
+
+- Submit product-related enquiries
+- View enquiry status
+- Allow authorised users to reply to enquiries
+- Track pending and answered enquiries
+
+### Order / Quote Workflow
+
+- Create product orders or quote-style requests
+- View personal order history
+- View order details with product items and quantities
+- Admin access for broader order management
+
+### Authentication and Authorisation
+
+- Login-based user authentication
+- JWT-based API access
+- Role-based access control
+- Separate permissions for partner, sales, occupational therapist, and admin users
+
+### Admin / Partner Support
+
+- Admin-facing management workflows
+- Business partner access for submitting and tracking requests
+- Backend APIs designed around practical healthcare product operations
+
+---
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | React 18, TypeScript, Vite |
+| UI | Ant Design, Tailwind CSS, Ant Design Icons |
+| State / Routing | Zustand, React Router |
+| API Client | Axios |
+| Backend | Java 21, Spring Boot 3.4.4 |
+| API | Spring Web, RESTful JSON APIs |
+| Authentication | Spring Security, JWT |
+| Database / Persistence | MySQL, MyBatis, Spring Data JPA |
+| Validation | Jakarta Validation, Hibernate Validator |
+| Documentation | OpenAPI / Swagger, GitHub Wiki |
+| Testing | Spring Boot Test, Spring Security Test, MyBatis Test |
+| Build Tools | Maven, npm, Vite |
+| Design | Figma |
+| Project Management | GitHub Projects, Agile/Scrum |
+
+---
+
+## Architecture Overview
+
+```text
+React + TypeScript Frontend
+        |
+        | Axios / JSON
+        v
+Spring Boot REST API
+        |
+        | Service + Security Layer
+        v
+MyBatis / JPA Persistence Layer
+        |
+        v
+MySQL Database
+```
+
+The frontend communicates with the backend through RESTful JSON APIs. The backend handles authentication, product management, enquiry workflows, order workflows, and user/role-based access control.
+
+---
+
+## API Highlights
+
+The backend provides REST APIs for:
+
+- user authentication and logout
+- product listing, product details, and product search
+- category retrieval
+- order creation and order history
+- enquiry creation, enquiry listing, and enquiry replies
+- role-based user operations
+
+Example endpoints:
+
+```text
+POST /api/auth/login
+GET  /api/products
+GET  /api/products/{id}
+GET  /api/products/search?query=cushion
+GET  /api/orders/my
+POST /api/orders/place
+GET  /api/enquiries/my
+POST /api/enquiries/send
+POST /api/enquiries/{id}/reply
+```
+
+---
+
+## Repository Structure
+
+```text
+.
+├── backend/                  # Spring Boot backend application
+│   ├── src/                  # Backend source code
+│   ├── sql/                  # Database scripts
+│   ├── pom.xml               # Maven configuration
+│   └── API_DOCUMENTATION_EN.md
+│
+├── frontend/
+│   └── code/
+│       └── nov-project/      # React + TypeScript + Vite frontend
+│
+├── docs/                     # Project documentation and design materials
+└── README.md
+```
+
+---
+
+
+## My Contribution
+
+My work focused on both backend engineering and product delivery:
+
+- contributed to backend API and database design
+- implemented and supported core backend workflows using Java and Spring Boot
+- helped design product search, quote/order, and enquiry-related workflows
+- supported role-based access control design
+- contributed to technical documentation and client-facing demonstrations
+- coordinated sprint planning, task allocation, team communication, and progress tracking as Scrum Master
+- helped translate client needs into user stories, acceptance criteria, and implementable product features
+
+
+
+## Team & Credits
+
+**Team Members**
+
+- Luyun Li — Client Liaison / Scrum Master, Back-end
+- Zongliang Han — Product Owner, Back-end
+- Zihao Wang — Backend Lead, Back-end
+- Ning Yang — Frontend Lead, Front-end
+- Shenyi Hu — Developer, Front-end
+- Shuran Yang — Developer, Front-end
+- Xinze Li — Developer, Front-end
+- Zixun Qiu — Developer, Front-end
+- Chan Tang — Developer, Back-end
+- Jiale Xu — Developer, Back-end
+- Tingyu Wang — Developer, Back-end
+- Wenxu Guo — Developer, Back-end
+
+**Mentor:** Dr. Geoff Jenkins  
+**Client:** Jim McKinlay
