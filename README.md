@@ -1,4 +1,22 @@
+<div align="center">
+
 # Healthcare Equipment Assistant Platform
+
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-Frontend-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-Build-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Java](https://img.shields.io/badge/Java-21-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![Swagger](https://img.shields.io/badge/OpenAPI-Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black)
+![Figma](https://img.shields.io/badge/Figma-Prototype-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+<br/>
+
+**Full-stack healthcare equipment assistant · Product search · Enquiry workflow · Quote/order management · Role-based access**
+
+</div>
 
 A full-stack healthcare equipment assistant designed for [Novis Healthcare](https://novis.com.au/), an Australian assistive technology and healthcare equipment provider. The platform helps NDIS participants, carers, and business partners search for suitable assistive products and manage quote requests more efficiently.
 
